@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>画板</title>
+    <link rel="stylesheet" href="css/huaban.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/huaban.js"></script>
+    <script src="js/draw.js"></script>
+</head>
+<body>
+    <div class="screen">
+        <ul class="title">
+            <li class="title-t">
+                <div>文件</div>
+                <ul class="title-block file">
+                    <li>新建</li>
+                    <li>返回</li>
+                    <li>保存</li>
+                </ul>
+            </li>
+            <li class ="title-t">
+                <div>绘图</div>
+                <ul class="title-block shapes">
+                    <li class="tu line"  title="线" data-role="line">&nbsp;<span></span></li>
+                    <li class="tu rect" title="矩形" data-role="rect">&nbsp;<span></span></li>
+                    <li class="tu circle" title="圆" data-role="circle">&nbsp;<span></span></li>
+                    <li class="tu start" title="五角星" data-role="start"><img style="width: 100%;height: 40px;"src="images/start.png" alt=""></li>
+                    <li class="tu pen" title="铅笔" data-role="pen">&nbsp;<span>铅笔</span></li>
+                </ul>
+            </li>
+            <li class="title-t">
+                <div>类型</div>
+                <ul class="title-block type">
+                    <li class="line" data-role="stroke">画线</li>
+                    <li class="rect" data-role="fill">填充</li>
+                </ul>
+
+            </li>
+            <li class="title-t">
+                <div>线条粗细</div>
+                <ul class="title-block lineWidth">
+                    <li class="tu xi"title="细" data-role="1">&nbsp;<span></span></li>
+                    <li class="tu zhong"title="中" data-role="4">&nbsp;<span></span></li>
+                    <li class="tu cu" title="粗" data-role="8">&nbsp;<span></span></li>
+                </ul>
+            </li>
+            <li class="title-t">
+                <div>橡皮</div>
+                <ul class="title-block xpsize">
+                    <li class="tu xiao"title="小" data-role="8">&nbsp;<span></span></li>
+                    <li class="tu m"title="中" data-role="16">&nbsp;<span></span></li>
+                    <li class="tu da" title="大" data-role="32">&nbsp;<span></span></li>
+                </ul>
+            </li>
+            <li class="title-t">
+                <div class="select">选择</div>
+            </li>
+            <li class="title-t">
+                <div>线条的颜色</div>
+                <ul class="title-block lineColor"><input type="color"></ul>
+            </li>
+            <li class="title-t">
+                <div>填充的颜色</div>
+                <ul class="title-block fillColor"><input type="color"></ul>
+            </li>
+        </ul>
+        <div class="box">
+            <div class="copy"></div>
+            <canvas></canvas>
+            <div class="xp"></div>
+            <div class="selectarea"></div>
+        </div>
+    </div>
+
+</body>
+</html>
